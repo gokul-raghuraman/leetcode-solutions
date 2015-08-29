@@ -3,6 +3,10 @@ from collections import deque
 class Solution:
 	def maxSlidingWindow(self, nums, k):
 
+		# Edge case, if empty input, return empty output
+		if nums == []:
+			return []
+
 		n = len(nums)
 
 		# Create an empty result array of size n-k+1
